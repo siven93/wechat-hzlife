@@ -1,0 +1,73 @@
+.record-list {
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+}
+
+.record-item {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.record-item:nth-last-of-type(1) {
+  border-bottom: none;
+}
+
+.record-info {
+  display: block;
+  margin-bottom: 10rpx;
+}
+
+.get {
+  color: #52d958;
+}
+
+.drag {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background: #fda924;
+  box-shadow: 0 0 20rpx #fda924; /*no*/
+  position: fixed;
+  bottom: 160rpx;
+  right: 80rpx;
+  z-index: 11;
+  text-align: center;
+  line-height: 80rpx;
+  opacity: 0;
+}
+
+.drag-menu {
+  opacity: 1;
+  z-index: 12;
+}
+
+.drag icon {
+  display: inline-block;
+  width: 48rpx;
+  height: 48rpx;
+  background: url('http://shop.hz-life.com/Static/img/menu.png') no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.drag .icon-market {
+  background: url('http://shop.hz-life.com/Static/img/white/menu05.png') no-repeat;
+  background-size: contain;
+}
+
+.drag .icon-card {
+  background: url('http://shop.hz-life.com/Static/img/white/menu06.png') no-repeat;
+  background-size: contain;
+}
+
+.drag .icon-me {
+  background: url('http://shop.hz-life.com/Static/img/white/menu03.png') no-repeat;
+  background-size: contain;
+}
+
+.drag .icon-index {
+  background: url('http://shop.hz-life.com/Static/img/white/menu04.png') no-repeat;
+  background-size: contain;
+}

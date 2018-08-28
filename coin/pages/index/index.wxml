@@ -1,0 +1,100 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='cash-header'>
+    <icon />
+    <view class='header-use'>
+      <view>可用金额</view>
+      <view class='header-money'>
+        <text>3.90</text>元</view>
+    </view>
+  </view>
+  <view class='cash-return'>
+    <navigator url='/pages/coininfo/index' class='return-item column-center' hover-class='none'>
+      <icon class='add-icon' />
+      <text>累计返现（元）</text>
+      <text class='return-money'>3.90</text>
+    </navigator>
+    <navigator url='/pages/coininfo/index' class='return-item column-center' hover-class='none'>
+      <icon class='minus-icon' />
+      <text>使用返现（元）</text>
+      <text class='return-money'>0.00</text>
+    </navigator>
+    <icon class='return-line' />
+  </view>
+  <view class='cash-back'>
+    <navigator url='/pages/coininfo/index' class='back-item row-center' hover-class='none'>
+      <icon class='back-info' />
+      <text>返现明细</text>
+      <icon class='arrow' />
+    </navigator>
+    <view class='back-item row-center' hover-class='none' bindtap='showLayer'>
+      <icon class='back-desc' />
+      <text>返现说明</text>
+      <icon class='arrow' />
+    </view>
+  </view>
+  <view class='cash-content column-center'>
+    <navigator url='/pages/coinlist/index' class='cash-ad' hover-class='none'></navigator>
+    <view class='pro-list'>
+      <navigator url='/pages/coindetails/index' class='pro-item column-center' hover-class='none'>
+        <image src='http://test.hz-life.com/upload/201807/04/17.jpg'></image>
+        <text>中国石化石油卡</text>
+        <text class='integral'>100.00元</text>
+      </navigator>
+      <navigator url='/pages/coindetails/index' class='pro-item column-center' hover-class='none'>
+        <image src='http://test.hz-life.com/upload/201807/04/17.jpg'></image>
+        <text>中国石化石油卡</text>
+        <text class='integral'>100.00元</text>
+      </navigator>
+      <navigator url='/pages/coindetails/index' class='pro-item column-center' hover-class='none'>
+        <image src='http://test.hz-life.com/upload/201807/04/17.jpg'></image>
+        <text>中国石化石油卡</text>
+        <text class='integral'>100.00元</text>
+      </navigator>
+    </view>
+    <navigator url='/pages/coinlist/index' class='more' hover-class='none'></navigator>
+  </view>
+  <view class='layer' hidden='{{layerFlag}}'>
+    <view class='layer-content column-center'>
+      <view class='layer-box column-center'>
+        <text class='layer-header'>关于红包</text>
+        <view class='answer-list'>
+          <view class='answer-item'>
+            <text class='question'>Q：红包有什么用？</text>
+            <view class='answer-txt'>
+              <text class='answer-icon'>A：</text>
+              <view class='answer-info'>
+                <view>1.可以当钱用，可购买商城任何商品。</view>
+                <view>2.兑换有实价的惊喜礼品，如超市卡、手机、油卡、黄金吊坠等等。</view>
+              </view>
+            </view>
+          </view>
+          <view class='answer-item'>
+            <text class='question'>Q：要获取更多红包，有哪些办法？</text>
+            <view class='answer-txt'>
+              <text class='answer-icon'>A：</text>
+              <view class='answer-info'>
+                <view>1.商城购买任意商品，您可获得返现红包。</view>
+                <view>2.分享商品给好友，购买成功后您可获得一定的返现红包，无上限。</view>
+              </view>
+            </view>
+          </view>
+          <view class='answer-item'>
+            <text class='question'>Q：红包会过期吗？</text>
+            <view class='answer-txt'>
+              <text class='answer-icon'>A：</text>
+              <view class='answer-info'>
+                <text>红包暂无过期时间。</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='layer-close column-center' bindtap='closeLayer'>
+        <icon class='layer-line' />
+        <text class='layer-btn row-center'>×</text>
+      </view>
+    </view>
+  </view>
+  <drag />
+</view>

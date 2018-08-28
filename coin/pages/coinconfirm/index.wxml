@@ -1,0 +1,53 @@
+<view class='container'>
+  <view class='header'>
+    <image src='{{proData.img}}'></image>
+    <view class='pro-info column'>
+      <text class='pro-name'>{{proData.name}}</text>
+      <view>
+        <text class='theme'>{{proData.price}}</text>元</view>
+    </view>
+  </view>
+  <view class='pro-count'>
+    <view class='pro-num'>
+      <text>数量</text>
+      <text>×1</text>
+    </view>
+    <view class='pro-num'>
+      <text>需抵扣金额</text>
+      <view>
+        <text class='theme'>{{proData.total}}</text>元</view>
+    </view>
+  </view>
+  <!-- 去地址栏 -->
+  <navigator class='pro-address row-center' hover-class='none'>
+    <view class='address-txt' wx:if='{{address.name}}'>
+      <text>收货人：{{address.name}} {{address.mobile}}</text>
+      <text class='address-area' wx:if='{{address.type == 20}}'>收货地址：{{address.area}}</text>
+    </view>
+    <view class='address-txt' wx:else>提示：你还未设置收货地址
+      <text class="theme">请添加</text>
+    </view>
+    <icon />
+  </navigator>
+  <view class='pro-footer'>
+    <text class='pro-btn' bindtap='toExchange'>确定兑换</text>
+  </view>
+  <view class='layer' hidden='{{cFlag}}'>
+    <view class='layer-box'>
+      <view class='layer-desc'>确定使用
+        <text class='theme'>{{proData.total}}</text>元兑换？</view>
+      <view class='layer-btn'>
+        <text bindtap='cancel'>取消</text>
+        <text class='btn-confirm' bindtap='confirm'>确定</text>
+      </view>
+    </view>
+  </view>
+  <view class='layer' hidden="{{sFlag}}">
+    <view class='layer-box column-center'>
+      <icon class='layer-icon' />
+      <text>兑换成功</text>
+      <text class='s-layer-btn' bindtap='toInfo'>查看详情</text>
+    </view>
+  </view>
+  <drag />
+</view>

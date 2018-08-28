@@ -1,0 +1,60 @@
+<view class='container'>
+  <view class='navbar row-center'>
+    <text class='active'>全部</text>
+    <text>最热</text>
+    <text>价格</text>
+  </view>
+  <view class='pro-list'>
+    <navigator class='pro-item column' hover-class='none'>
+      <text class='pro-name'>韩国SNP嫩白安瓶精华面膜</text>
+      <text class='pro-price'>110.00元</text>
+      <image src='http://test.hz-life.com/upload/201807/04/10.jpg' alt=''></image>
+    </navigator>
+    <navigator class='pro-item column' hover-class='none'>
+      <text class='pro-name'>韩国SNP嫩白安瓶精华面膜</text>
+      <text class='pro-price'>110.00元</text>
+      <image src='http://test.hz-life.com/upload/201807/04/10.jpg' alt=''></image>
+    </navigator>
+    <navigator class='pro-item column' hover-class='none'>
+      <text class='pro-name'>韩国SNP嫩白安瓶精华面膜</text>
+      <text class='pro-price'>110.00元</text>
+      <image src='http://test.hz-life.com/upload/201807/04/10.jpg' alt=''></image>
+    </navigator>
+    <navigator class='pro-item column' hover-class='none'>
+      <text class='pro-name'>韩国SNP嫩白安瓶精华面膜</text>
+      <text class='pro-price'>110.00元</text>
+      <image src='http://test.hz-life.com/upload/201807/04/10.jpg' alt=''></image>
+    </navigator>
+    <navigator class='pro-item column' hover-class='none'>
+      <text class='pro-name'>韩国SNP嫩白安瓶精华面膜</text>
+      <text class='pro-price'>110.00元</text>
+      <image src='http://test.hz-life.com/upload/201807/04/10.jpg' alt=''></image>
+    </navigator>
+    <navigator class='pro-item column' hover-class='none'>
+      <text class='pro-name'>韩国SNP嫩白安瓶精华面膜</text>
+      <text class='pro-price'>110.00元</text>
+      <image src='http://test.hz-life.com/upload/201807/04/10.jpg' alt=''></image>
+    </navigator>
+    <navigator class='pro-item column' hover-class='none'>
+      <text class='pro-name'>韩国SNP嫩白安瓶精华面膜</text>
+      <text class='pro-price'>110.00元</text>
+      <image src='http://test.hz-life.com/upload/201807/04/10.jpg' alt=''></image>
+    </navigator>
+    <navigator class='pro-item column' hover-class='none'>
+      <text class='pro-name'>韩国SNP嫩白安瓶精华面膜</text>
+      <text class='pro-price'>110.00元</text>
+      <image src='http://test.hz-life.com/upload/201807/04/10.jpg' alt=''></image>
+    </navigator>
+    <navigator class='pro-item column' hover-class='none'>
+      <text class='pro-name'>韩国SNP嫩白安瓶精华面膜</text>
+      <text class='pro-price'>110.00元</text>
+      <image src='http://test.hz-life.com/upload/201807/04/10.jpg' alt=''></image>
+    </navigator>
+    <navigator class='pro-item column' hover-class='none'>
+      <text class='pro-name'>韩国SNP嫩白安瓶精华面膜</text>
+      <text class='pro-price'>110.00元</text>
+      <image src='http://test.hz-life.com/upload/201807/04/10.jpg' alt=''></image>
+    </navigator>
+  </view>
+  <drag />
+</view>

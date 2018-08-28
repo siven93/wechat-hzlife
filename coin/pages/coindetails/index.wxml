@@ -1,0 +1,39 @@
+<view class='container'>
+  <view class='content' bindtap='closeLayer'>
+    <view class='pro-img row-center'>
+      <image src='{{proData.img}}'></image>
+    </view>
+    <view class='pro-info'>
+      <view class='pro-name'>{{proData.name}}</view>
+      <text class='pro-price'>{{proData.price}}元</text>
+    </view>
+    <view class='pro-desc'>
+      <view class='desc-item'>
+        <view class='pro-title'>礼品描述</view>
+        <text>{{proData.name}}</text>
+      </view>
+      <view class='desc-item'>
+        <view class='pro-title'>兑换流程</view>
+        <text>兑换后客服人员将在5个工作日内与您联系并安排礼品发放（颜色随机），请保持电话畅通。</text>
+      </view>
+      <view class='desc-item'>
+        <view class='pro-title'>温馨提示</view>
+        <text>除了礼品本身不能正常兑换外，商品已经兑换一律不退换积分。</text>
+      </view>
+    </view>
+  </view>
+  <view class='pro-footer'>
+    <view class='pro-car' hidden='{{dFlag}}'>
+      <view class='pro-count'>
+        <view bindtap='minusNum'>－</view>
+        <text class='pro-num'>{{proData.num}}</text>
+        <view bindtap='addNum'>＋</view>
+      </view>
+      <view class='available'>当前可兑换
+        <text>{{proData.coin}}</text>元</view>
+      <text class='pro-close' bindtap='closeLayer'>×</text>
+    </view>
+    <text class="pro-btn {{disabled?'disabled':''}}" bindtap='toCoinConfirm'>{{disabled?'您的红包余额不足':dFlag?'我要兑换':'确定兑换'}}</text>
+  </view>
+ <drag />
+</view>

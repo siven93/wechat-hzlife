@@ -1,0 +1,125 @@
+page {
+  background: #f5f5f5;
+}
+
+.pro-img {
+  width: 100%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.pro-img image {
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.pro-info {
+  background: #fff;
+  margin: 20rpx 0;
+  padding: 20rpx 30rpx;
+}
+
+.pro-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.pro-price {
+  color: #fbbf5f;
+}
+
+.pro-desc {
+  background: #fff;
+  padding: 0 30rpx 110rpx 30rpx;
+}
+
+.desc-item {
+  padding: 20rpx 0;
+  border-bottom: 2rpx dashed #ccc;
+}
+
+.desc-item:nth-last-of-type(1) {
+  border-bottom: none;
+}
+
+.pro-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  border-top: 1rpx solid #ccc;
+  z-index: 2;
+}
+
+.pro-car {
+  position: relative;
+  padding-top: 30rpx;
+}
+
+.pro-count {
+  margin-bottom: 15rpx;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.pro-count>view {
+  width: 75rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #ccc;
+  border: 1rpx solid #ccc;
+}
+
+.pro-num {
+  width: 240rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #000;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.available {
+  text-align: center;
+}
+
+.available text {
+  color: #fbbf5f;
+}
+
+.pro-close {
+  display: block;
+  height: 40rpx;
+  width: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #ccc;
+  font-size: 36rpx;
+}
+
+.pro-btn {
+  display: block;
+  width: 670rpx;
+  margin: 15rpx auto;
+  height: 80rpx;
+  color: #fff;
+  background: #fbbf5f;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 25rpx;
+}
+
+.pro-btn.disabled {
+  background: #ccc;
+}

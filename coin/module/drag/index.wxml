@@ -1,0 +1,10 @@
+<view class='drag-list'>
+    <view class="drag drag-menu" style="left:{{sty.x}}px;top:{{sty.y}}px"
+    catchtouchstart='start' catchtouchmove='move' catchtouchend='end'>
+      <icon />
+    </view>
+    <navigator class='drag' url='{{item.url}}' open-type='reLaunch' hover-class='none' wx:for='{{drags}}'  
+    wx:key='unique' style="left:{{item.pos.l}}px;top:{{item.pos.t}}px;opacity:{{item.pos.opc}}">
+      <icon class="{{item.icon}}" />
+    </navigator>
+</view>

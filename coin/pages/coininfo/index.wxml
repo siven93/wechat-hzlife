@@ -1,0 +1,26 @@
+<view class='container'>
+  <view class='record-list'>
+    <view class='record-item row-center'>
+      <view>
+        <text class='record-info'>邀请用户购买返现</text>
+        <text>2018-07-23 11:19:50</text>
+      </view>
+      <text class='get'>3.90</text>
+    </view>
+    <view class='record-item row-center'>
+      <view>
+        <text class='record-info'>邀请用户购买返现</text>
+        <text>2018-07-23 11:19:50</text>
+      </view>
+      <text class='get'>3.90</text>
+    </view>
+    <view class='record-item row-center'>
+      <view>
+        <text class='record-info'>邀请用户购买返现</text>
+        <text>2018-07-23 11:19:50</text>
+      </view>
+      <text class='get'>3.90</text>
+    </view>
+  </view>
+  <drag />
+</view>
